@@ -1,21 +1,22 @@
-# Sample Hardhat Project
+# Aave Flash Loan Arbitrage using Hardhat 
+## Sample Hardhat Project
 
 This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
 
-# Step 1: Initialize a New Hardhat Project
+## Step 1: Initialize a New Hardhat Project
 Open your terminal and navigate to your desired project directory. Run the following commands:
 
 npm install --save-dev hardhat
 npx hardhat
 Follow the prompts to create a new Hardhat project. Choose the default settings for simplicity.
 
-# Step 2: Install Dependencies
+## Step 2: Install Dependencies
 We’ll need to install some additional dependencies for our project. Open your terminal and run the following commands:
 ```
 npm install --dev @nomiclabs/hardhat-ethers@npm:hardhat-deploy-ethers ethers @nomiclabs/hardhat-etherscan @nomiclabs/hardhat-waffle chai ethereum-waffle hardhat hardhat-contract-sizer hardhat-deploy hardhat-gas-reporter prettier prettier-plugin-solidity solhint solidity-coverage dotenv
 npm install @aave/core-v3
 ```
-# Step 3: Project Structure
+## Step 3: Project Structure
 Your project directory should now have the following structure:
 ```
 - contracts/
@@ -52,7 +53,7 @@ After all the adjustments made above, here’s how our project structure should 
 - package.json
 - README.md
 ```
-# Step 4: Contracts
+## Step 4: Contracts
 In this tutorial, we’ll be working with two smart contracts:
 
 Dex.sol: This contract simulates a decentralized exchange where arbitrage opportunities occur.
@@ -126,7 +127,7 @@ npx hardhat deploy --tags FlashLoanArbitrage --network sepolia
 which outputs the FlashLoanArbitrage contract address below:
 “0xc30b671E6d94C62Ee37669b229c7Cd9Eab2f7098”
 ```
-# Step 5: Testing Smart Contracts
+## Step 5: Testing Smart Contracts
 Let’s now text out the contracts using Remix IDE, but to be more specific here’s where the Flash Loan Arbitrage:
 ```
 // exchange rate indexes
